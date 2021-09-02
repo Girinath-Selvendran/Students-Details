@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +8,17 @@
     <style>
         body {
             background-image: url(https://adoption.azureedge.net/wp-content/custom-backgrounds-gallery/VIVA-background-office-06.jpg);
-           background-repeat: no-repeat;
-           background-size: cover;
-            /* opacity: 0.5; */
-            /* background-color: rgb(177, 228, 228); */
-
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-
+        h1 {
+            text-align: center;
+        }
         .container {
             display: flex;
             justify-content: center;
-            padding: 50px 0px 50px 0px;
+            padding: 20px 0px 20px 0px;
         }
-
         form {
             background-color: white;
             padding: 20px 20px;
@@ -29,41 +26,37 @@
             box-shadow: 0 0 8px 2px #888;
             background: rgba(225, 225, 225, .6);
         }
-.range{
-    background-color: rgb(142, 135, 135);
-    color: red;
-}
+        .range {
+            background-color: rgb(142, 135, 135);
+            color: red;
+        }
         #submit {
             border: none;
             background-color: rgb(9, 92, 222);
             border-radius: 200px;
-            width: 60px;
+            width: 76px;
             height: 30px;
             color: rgb(243, 248, 248);
             cursor: pointer;
         }
-        #submit:hover{
-background-color: rgb(50, 50, 191);        
-}
-.btn{
-    text-decoration: none;
-  color: white;
-}
-
+        #submit:hover {
+            background-color: rgb(50, 50, 191);
+        }
+        .btn {
+            text-decoration: none;
+            color: white;
+        }
         form {
             background-color: #deba4c, rgba(206, 218, 129, 0.904);
-            box-shadow:0px 14px 28px rgba(0,0,0,0.25),
-               0px 10px 10px rgba(0,0,0,.22);
+            box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25),
+                0px 10px 10px rgba(0, 0, 0, .22);
         }
-
-    
     </style>
 </head>
-
 <body>
     <div class="container">
         <form>
-            <h1 style="text-align: center;"> Registration Form</h1><br>
+            <h1>Students Registration Form</h1><br>
             <table>
                 <tr>
                     <th>
@@ -108,7 +101,8 @@ background-color: rgb(50, 50, 191);
                         <span required>Age : </span><br><br>
                     </th>
                     <td>
-                        <input class="range" type="range" value="18" max="100" oninput="num.value = this.value">
+                        <input class="range" type="range" value="18" min="18" max="100"
+                            oninput="num.value = this.value">
                         <output id="num">18</output><br><br>
                     </td>
                 </tr>
@@ -133,7 +127,6 @@ background-color: rgb(50, 50, 191);
                         <input type="radio" name="radio">Married<br><br>
                     </td>
                 </tr>
-
                 <tr>
                     <th>
                         <label required>Phone Number: </label><br><br>
@@ -152,14 +145,11 @@ background-color: rgb(50, 50, 191);
                         <textarea name="" id="" cols="20" rows="5"></textarea><br><br>
                     </td>
                 </tr>
-
-
-                <tr>
+              <tr>
                     <td></td>
                     <td>
-                        
-                            <button id="submit"> <b><a class="btn"  href="../index.html">Submit </a></b></button>
-                       <br>
+                        <button id="submit"> <b><a class="btn" href="../index.html">Register </a></b></button>
+                        <br>
                     </td>
                     <td></td>
                 </tr>
@@ -173,5 +163,4 @@ background-color: rgb(50, 50, 191);
         <br>
     </div>
 </body>
-
 </html>
