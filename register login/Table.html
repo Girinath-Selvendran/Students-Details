@@ -12,27 +12,36 @@ background-image: url(https://html.sammy-codes.com/images/background.jpg) ;
 background-repeat: no-repeat;
            background-size: cover;
       }
-      
-        #table {
-            padding: 100px 0px 100px 0px;
-        }
+      .head{
+          display: inline-flex;
+      }
+      .btn{
+          align-items: center;
+          margin: 40px;
 
+      }
+        #table {
+            padding: 65px 0px 65px 0px;
+            color: rgb(17, 16, 16);
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
         a {
             text-decoration: none;
         }
       table{
          margin-top: 50px;
-         border: rgb(20, 18, 18);
-         background:white rgba(115, 225, 658, 1);
+         border: rgb(238, 9, 9);
+         background:rgb(34, 7, 238) rgba(115, 225, 658, 1);
       }
-        h1{
-         display: inline; 
+        tr{
+            height: 50px;
         }
         button{
             border: none;
-            background-color: rgb(9, 92, 222);
+            background-color: #de4e22;
             border-radius: 200px;
-            width: 60px;
+            width: 71px;
             height: 30px;
             color: rgb(243, 248, 248);
             cursor: pointer;
@@ -42,14 +51,14 @@ background-repeat: no-repeat;
         }
     </style>
 </head>
-
 <body>
     <center id="table">
-        <h1>Students List </h1> 
-
-        <button ><a href="../index.html">Logout</a></button>                                                                                           
-
-        <table border="1" style="text-align: center;" width="600px" height="400px">
+        <div class="head">
+       <div> <h1>Students List </h1> </div>
+       <div> <button class="btn" ><a href="../index.html"><b>Signout</b> </a></button> 
+       </div>     
+    </div>                                        
+        <table border="1" style="text-align: center;" width="700px" height="400px">
             <tr>
                 <th>S.NO</th>
                 <th>Students</th>
@@ -66,10 +75,9 @@ background-repeat: no-repeat;
             <tr>
                 <td>2</td>
                 <td>Kiruba</td>
-                <td>Kiruba@gmail.com</td>
+                <td>kiruba@gmail.com</td>
                 <td>7586443855</td>
                 <td><button id="button"><a href=student2.html>View</a></button></td>
-
             </tr>
             <tr>
                 <td>3</td>
@@ -77,7 +85,6 @@ background-repeat: no-repeat;
                 <td>nishanth@gmail.com</td>
                 <td>4512789658</td>
                 <td><button id="button"><a href=student3.html>View</a></button></td>
-
             </tr>
             <tr>
                 <td>4</td>
@@ -85,15 +92,13 @@ background-repeat: no-repeat;
                 <td>thanam@gmail.com</td>
                 <td>7894489687</td>
                 <td><button id="button"><a href=student4.html>View</a></button></td>
-
             </tr>
             <tr>
                 <td>5</td>
                 <td>Logesh</td>
-                <td>Logesh@gmail.com</td>
+                <td>logesh@gmail.com</td>
                 <td>9659156268</td>
                 <td><button id="button"><a href=student5.html>View</a></button></td>
-
             </tr>
         </table>
     </center>
