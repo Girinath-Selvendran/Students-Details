@@ -2,17 +2,19 @@ body {
     background-image: url(https://www.teahub.io/photos/full/38-389869_girl-with-cycle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: aquamarine; */
 }
 
+input{
+    outline: red;
+
+}
 .button {
+    color: white;
+    text-decoration: none;
     background-color:#de4e22;
-    border-radius: 200px;
+    border-radius: 20px;
     border: none;
-    width: 85px;
-    height: 36px;
-    box-shadow: 40px;
-    text-shadow: 10px;
+    padding: 8px 10px 8px 10px;
     cursor: pointer;
 }
 .btn{
